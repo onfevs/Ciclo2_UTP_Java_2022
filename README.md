@@ -4,4 +4,5 @@
 
 ### Reto 1 – Requerimiento crédito beca universitaria
  
+### Reto 2 – Requerimiento registro de donaciones
 
