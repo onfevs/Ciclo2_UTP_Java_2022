@@ -2,7 +2,7 @@
 
 ## Solucion a los retos del ciclo 2 en el programa de Mision TIC , con la UTP viendo JAVA.
 
-===========================================================================================
+==================================================================
 
 ### Reto 1 – Requerimiento crédito beca universitaria
 
@@ -14,4 +14,4 @@
 
 ### Reto 3 – Requerimiento extracción de información de una base de datos
 
-=============================================================================
+==================================================================
