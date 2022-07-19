@@ -1,0 +1,4 @@
+SELECT ID_MATERIALCONSTRUCCION as ID, NOMBRE_MATERIAL as NOMBRE, PRECIO_UNIDAD as PRECIO
+FROM MaterialConstruccion mc 
+WHERE Importado = 'Si'
+ORDER BY Nombre_Material;
