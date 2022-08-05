@@ -26,11 +26,11 @@ public class ReportesController {
         return proyectoBancoDao.listar(banco);
     }
 
-    public List<DeudasPorProyectoVo> listaTotalDeudasPorProyecto(Double limite) throws SQLException {
+    public List<DeudasPorProyectoVo> listaTotalDeudasProyecto(Double limite) throws SQLException {
         return deudasPorProyectoDao.listar(limite);
     }
 
-    public List<ComprasDeLiderVo> listaTotalComprasDeLider() throws SQLException {
+    public List<ComprasDeLiderVo> listaTotalComprasLider() throws SQLException {
         return comprasDeLiderDao.listar();
     }
 }

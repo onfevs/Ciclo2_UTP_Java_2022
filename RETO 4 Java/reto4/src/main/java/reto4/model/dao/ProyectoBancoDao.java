@@ -16,12 +16,13 @@ public class ProyectoBancoDao {
         Connection conn = JDBCUtilities.getConnection();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        String consulta = "SELECT P.ID_Proyecto as ID, P.Constructora, P.Ciudad, P.Clasificacion, T.Estrato, L.Nombre || ' ' || L.Primer_Apellido ||' '||L.Segundo_Apellido AS LIDER"
-                + "FROM Proyecto P "
-                + "Join Tipo T  on (P.ID_Tipo = T.ID_Tipo)"
-                + "JOIN Lider L on (P.ID_Lider = L.ID_Lider)"
-                + "WHERE P.Banco_vinculado = ?"
-                + "ORDER BY Fecha_Inicio DESC , Ciudad , Constructora";
+        String consulta = "SELECT P.ID_PROYECTO AS ID, P.CONSTRUCTORA, P.CIUDAD, P.CLASIFICACION, "
+                + "T.ESTRATO, L.NOMBRE||' '||L.PRIMER_APELLIDO||' '||L.SEGUNDO_APELLIDO AS LIDER "
+                + "FROM PROYECTO P "
+                + "JOIN TIPO T ON (P.ID_TIPO = T.ID_TIPO) "
+                + "JOIN LIDER L ON (P.ID_LIDER = L.ID_LIDER) "
+                + "WHERE P.BANCO_VINCULADO = ? "
+                + "ORDER BY FECHA_INICIO DESC, CIUDAD, CONSTRUCTORA ";
         try {
             pstmt = conn.prepareStatement(consulta);
             pstmt.setString(1, banco);

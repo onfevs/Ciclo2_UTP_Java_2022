@@ -44,8 +44,8 @@ public class ProyectoBancoVo {
         return estrato;
     }
 
-    public void setEstrato(String string) {
-        this.estrato = string;
+    public void setEstrato(Integer estrato) {
+        this.estrato = estrato;
     }
 
     public String getLider() {
@@ -62,6 +62,4 @@ public class ProyectoBancoVo {
                 clasificacion, estrato, lider);
     }
 
-    public void setEstrato(int int1) {
-    }
 }
