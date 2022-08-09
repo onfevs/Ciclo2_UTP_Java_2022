@@ -152,11 +152,11 @@ public class ReportesView extends JFrame implements ActionListener {
         }
         if (e.getSource() == i2) {
             proyectosFinanciadosPorBanco();
-            lblConsulta.setText("Consulta proyectos casa campestre");
+            lblConsulta.setText("Consulta Proyectos Casas Campestres");
         }
         if (e.getSource() == i3) {
             totalAdeudadoPorProyectosSuperioresALimite();
-            lblConsulta.setText("Consulta compras por proyectos");
+            lblConsulta.setText("Consulta Compras por Proyectos");
         }
     }
 }
