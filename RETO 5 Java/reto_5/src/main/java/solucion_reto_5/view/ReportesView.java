@@ -148,15 +148,15 @@ public class ReportesView extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == i1) {
             lideresQueMasGastan();
-            lblConsulta.setText("Consulta Lideres");
+            lblConsulta.setText("Consultas Lideres");
         }
         if (e.getSource() == i2) {
             proyectosFinanciadosPorBanco();
-            lblConsulta.setText("Consulta Proyectos Casas Campestres");
+            lblConsulta.setText("Consultas Proyectos Casas Campestres");
         }
         if (e.getSource() == i3) {
             totalAdeudadoPorProyectosSuperioresALimite();
-            lblConsulta.setText("Consulta Compras por Proyectos");
+            lblConsulta.setText("Consultas Compras por Proyectos");
         }
     }
 }
